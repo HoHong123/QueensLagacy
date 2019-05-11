@@ -1,0 +1,37 @@
+
+@media (max-width: 800px) {
+  section {
+    margin: 100px 36px 36px 36px;
+  }
+}
+
+@media (max-width: 700px) {
+  section .album-art {
+    width: 100%;
+  }
+  section .album-art img {
+    width: auto;
+    max-width: 100%;
+    margin: -100px auto 10px auto;
+    display: block;
+  }
+  section .album-details {
+    float: left;
+    max-width: 100%;
+  }
+}
+@media (max-width: 550px) {
+  section {
+    margin: 100px 20px 20px 20px;
+    padding: 20px 16px;
+  }
+  section ol {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 700px) {
+  ol li span:not(:last-child) {
+    margin-right: 1em;
+  }
+}

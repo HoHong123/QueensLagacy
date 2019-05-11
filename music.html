@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Queen's Lacacy - Music</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/new_main.css">
+    <link rel="stylesheet" href="css/music.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/responsive_music.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/new_main.js"></script>
+    <script src="js/music.js"></script>
+</head>
+
+<body style="background-color: rgba(0,0,0,.8)">
+	<header>
+		<div class="LOGO">
+        <img src="images/queen-logo.jpg">
+    </div>
+
+		<!-- 메뉴 -->
+    <div class="header_wrap">
+        <ul>
+            <li><a href="index.html" data-transition="slide" data-direction="reverse">HOME</a></li>
+            <li><a href="band.html" data-transition="slide">BAND</a></li>
+            <li class="on"><a href="#" data-transition="slide" >MUSIC</a></li>
+            <li><a href="lagacy.html" data-transition="slide" >LAGACY</a></li>
+            <li><a href="#" data-transition="slide" >ETC</a></li>
+        </ul>
+  	</div>
+  </header>
+
+  <div class="menu_btn">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+  </div>
+
+	<div class="menu_area">
+			<div class="menu_area_wrap">
+					<a href="index.html" data-role="button" data-transition="slide" data-dir="reverse">HOME</a>
+          <a href="band.html" data-role="button" data-transition="slide">BAND</a>
+          <a href="#" data-role="button" data-transition="slide" >MUSIC</a>
+          <a href="lagacy.html" data-role="button" data-transition="slide" >LAGACY</a>
+          <a href="#" data-role="button" data-transition="slide" >ETC</a>
+			</div>
+	</div>
+
+	<div class="background"></div>
+	<section>
+	  <div class="album-info">
+	    <div class="album-art">
+				<img src="images/Greatest_Hit.jpg"/>
+	      <div class="actions">
+	        <div class="play" onclick="nextPlay(), listPlay = true;">Play</div>
+	      </div>
+	    </div>
+	    <div class="album-details">
+	      <h2><img src="images/album1.jpg"/>Queen</h2>
+	      <h1>Greatest Hits</h1><span> <span>Queen </span><span>&copy; Original 1981 edition</span></span>
+	      <p>1981년 퀸의 결성 10주년을 기념해 발매된 퀸의 첫번째 컴필레이션 앨범. 수록곡 17곡 가운데 프레디 머큐리가 작곡한 곡이 무려 10곡이며, 브라이언 메이와 존 디콘은 각각 5곡과 2곡을 가지고 있다.
+				영국 역사상 가장 많이 팔린 앨범이며 2014년 2월 영국 내 600만 장 판매라는 기록을 달성하였다. 선곡 기준은 간단하다. 퀸이 발매한 싱글 가운데 영국차트 30위 안에 든 곡들이다.</p>
+	    </div>
+	  </div>
+	  <div class="album-tracks">
+	    <ol>
+	      <li> <span class="album_hover" onclick="musicCalled(1), listPlay = false;">Bohemian Rhapsody</span><span>5:57</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(2), listPlay = false;">We Will Rock You</span><span>2:03</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(3), listPlay = false;">Under Pressure</span><span>4:03</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(4), listPlay = false;">Fat Bottomed Girls</span><span>3:25</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(5), listPlay = false;">Killer Queen</span><span>3:12</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(6), listPlay = false;">Don't Stop Me Now</span><span>3:30</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(7), listPlay = false;">We Are The Champions</span><span>3:01</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(8), listPlay = false;">Crazy Little Thing Called Love</span><span>2:44</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(9), listPlay = false;">You're My Best Friend</span><span>2:51</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(10), listPlay = false;">Stone Cold Crazy</span><span>2:14</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(11), listPlay = false;">Another One Bites The Dust</span><span>3:35</span></li>
+	      <li> <span class="album_hover" onclick="musicCalled(12), listPlay = false;">Sombody To Love</span><span>4:56</span></li>
+	    </ol>
+	  </div>
+	</section>
+
+	<audio id="myAudio" onended="checkEnd()" controls>
+		<source src="music/01.Bohemian Rhapsody.mp3" autoplay type="audio/mpeg">
+		Your Browser Does Not Support The Audio Elements
+	</audio>
+	
+	<div class="slidecontainer">
+			<input type="range" min="0" max="100" value="100" class="slider" onchange="volumOver(this.value);" onended="nextPlay()" id="myRange">
+	</div>
+
+	<script>
+		onLoad();
+	</script>
+
+
+<footer>
+	<div class="footer_sangdan"></div>
+	<div class="footer_wrap">
+		<div class="footer_first">
+			<a href="index.html" data-transition="slide" data-dir="reverse">HOME</a>
+			<a href="band.html" data-transition="slide">BAND</a>
+			<a href="#">MUSIC</a>
+			<a href="lagacy.html" data-transition="slide" >LAGACY</a>
+			<a href="#" data-transition="slide" >ETC</a>
+		</div>
+		<div class="footer_second">
+			<div class="footer_second_greed">
+				<h1>만든이</h1>
+				<div class="mama">
+					<p>
+							<b>프로젝트 명칭</b>:퀸 레거시<br>
+							<b>제작자</b>:박기홍<br>
+					</p>
+					<h3>연락처 : epzmfhs@naver.com</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_third_back"></div>
+</footer>
+</body>
+</html>

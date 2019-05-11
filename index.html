@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Queen's Lacacy - 5238776 박기홍 실습</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/new_main.css">
+		<link rel="stylesheet" href="css/main_mobile.css">
+		<link rel="stylesheet" href="css/responsive.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/new_main.js"></script>
+</head>
+
+<body style="background-color: rgba(0,0,0,.8)">
+	<header>
+		<div class="LOGO">
+        <img src="images/queen-logo.jpg">
+    </div>
+
+		<!-- 메뉴 -->
+		<!-- 데스크탑 메뉴 -->
+    <div class="header_wrap" data-role="content">
+        <ul>
+            <li class="on">
+							<a href="#" data-role="button">HOME</a>
+						</li>
+            <li><a href="band.html" data-role="button" data-transition="slide">BAND</a></li>
+            <li><a href="music.html" data-role="button" data-transition="slide">MUSIC</a></li>
+            <li><a href="lagacy.html" data-role="button" data-transition="slide">LAGACY</a></li>
+            <li><a href="#" data-role="button" data-transition="slide">ETC</a></li>
+        </ul>
+  	</div>
+    </header>
+
+		<!-- 모바일 메뉴 -->
+		<!-- line (1) -->
+		<!-- line (3) -->
+		<!-- line (2) -->
+    <div class="menu_btn">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+		<div class="menu_area">
+				<div class="menu_area_wrap" data-role="content">
+						<a href="#" data-role="button">HOME</a>
+            <a href="band.html" data-role="button" data-transition="slide">BAND</a>
+            <a href="music.html" data-role="button" data-transition="slide">MUSIC</a>
+            <a href="lagacy.html" data-role="button" data-transition="slide">LAGACY</a>
+            <a href="#" data-role="button" data-transition="slide">ETC</a>
+				</div>
+		</div>
+
+    <div class="main">
+        <section class="banner_area">
+            <div class="banner_wrap">
+            	<div class="prev_btn btn">
+		         	<span onclick="imgStart('L')"> <!-- 왼쪽 버튼 -->
+		            	<img src="images/btn_slide_prev_dimd.gif" name="arrow1" id="arrpw1" style="cursor: pointer;">
+		         	</span>
+		        </div>
+
+		        <div class="banner_item_warp">
+                	<div class="banner_item"> <!-- Child 1 이미지를 받음 -->
+                		<div class="banner_item_cover"></div>
+                		<div class="banner_item_desc_warp">
+                			<h1>LEAD VOCAL & PIANO</h1>
+                			<h3>" Freddie Mercury "</h3>
+                			<p>"나는 락 스타가 아니라, 전설이 될 것이다."<br>
+											록 역사상 가장 위대한 프런트맨</p>
+                			<div class="brand_box" onclick="location.href='band.html#1'">자세하게</div>
+                		</div>
+                	</div>
+                	<div class="banner_item"> <!-- Child 2 이미지를 받음 -->
+                		<div class="banner_item_cover"></div>
+                		<div class="banner_item_desc_warp">
+                			<h1>LEAD GUITAR & VOCAL</h1>
+                			<h3>" Brian May "</h3>
+                			<p>"나에게 있어 기타는 매우 감성적인 것이다."<br>
+											본인만의 독특한 사운드와 플레이를 펼친 만능 기타리스트</p>
+                			<div class="brand_box" onclick="location.href='band.html#2'">자세하게</div>
+                		</div>
+                	</div>
+                	<div class="banner_item"> <!-- Child 3 이미지를 받음 -->
+                		<div class="banner_item_cover"></div>
+                		<div class="banner_item_desc_warp">
+                			<h1>BASS GUITAR</h1>
+                			<h3>" John Deacon "</h3>
+                			<p>묵묵한 퀸의 비밀병기, 퀸의 닻</p>
+                			<div class="brand_box" onclick="location.href='band.html#3'">자세하게</div>
+                		</div>
+                	</div>
+                	<div class="banner_item"> <!-- Child 4 이미지를 받음 -->
+                		<div class="banner_item_cover"></div>
+                		<div class="banner_item_desc_warp">
+                			<h1>DRUM & VOCAL</h1>
+                			<h3>" Roger Taylor "</h3>
+                			<p>퀸의 드러머이자 백킹보컬이자 비주얼 담당</p>
+                			<div class="brand_box" onclick="location.href='band.html#4'">자세하게</div>
+                		</div>
+                	</div>
+            	</div>
+
+            	<div class="next_btn btn"> <!-- 오른쪽 버튼 -->
+		            <span onclick="imgStart('R')">
+		                 <img src="images/btn_slide_next_dimd.gif" name="arrow2" id="arrpw2" style="cursor: pointer;">
+		            </span>
+		        	</div>
+            </div>
+
+            <div class="radioBox">
+            	<ul>
+            		<li>
+	                    <input type="radio" name="chk_info" class="checkindex" onclick="radioIndex(1)" id="checkIndex1" checked="checked">
+	                    <label for="f-option"></label>
+	                    <div class="check"></div>
+	                </li>
+
+	                <li>
+	                    <input type="radio" name="chk_info" class="checkindex" onclick="radioIndex(2)" id="checkIndex2">
+	                    <label for="f-option"></label>
+	                    <div class="check"></div>
+	                </li>
+
+	                <li>
+	                    <input type="radio" name="chk_info" class="checkindex" onclick="radioIndex(3)" id="checkIndex3">
+	                    <label for="f-option"></label>
+	                    <div class="check"></div>
+	                </li>
+
+	                <li>
+	                    <input type="radio" name="chk_info" class="checkindex" onclick="radioIndex(4)" id="checkIndex4">
+	                    <label for="f-option"></label>
+	                    <div class="check"></div>
+	                </li>
+
+                </ul>
+            </div>
+
+						<div class="banner_wrap_mobile">
+							<div class="banner_wrap_mobile_item">
+								<div class="banner_mobile_item"></div>
+								<div class="banner_mobile_item"></div>
+								<div class="banner_mobile_item"></div>
+								<div class="banner_mobile_item"></div>
+								<div class="banner_mobile_item"></div>
+							</div>
+						</div>
+	</section>
+
+
+<section class="second_area">
+	<div class="member_log_warp">
+		<div class="member_log">
+			<div class="member_log_img">
+				<img src="images/second_area1.gif">
+			</div>
+			<div class="member_log_desc">
+				<h1>FreddieMercury</h1>
+				<p>불멸의 락밴드의 리드 보컬이자<br>
+					 전설로 남은 싱어</p>
+			</div>
+		</div>
+		<div class="member_log">
+			<div class="member_log_img">
+				<img src="images/second_area2.gif">
+			</div>
+			<div class="member_log_desc">
+				<h1>Brian May</h1>
+				<p>음악가, 천체물리학자, 작가<br>
+				   항상 한 차원 더 높은 수준의 연주를 보여주는 천재</p>
+
+			</div>
+		</div>
+		<div class="member_log">
+			<div class="member_log_img">
+				<img src="images/second_area3.gif">
+			</div>
+			<div class="member_log_desc">
+				<h1>Roger Taylor</h1>
+				<p>퀸의 보컬이자 드러머<br>
+				   퀸의 비주얼을 담당하는 미모의 드러머</p>
+			</div>
+		</div>
+		<div class="member_log">
+			<div class="member_log_img">
+				<img src="images/second_area4.gif">
+			</div>
+			<div class="member_log_desc">
+				<h1>John Deacon</h1>
+				<p>프레디의 절대적 믿음을 받던 베이스
+						<br>퀸의 비밀병기</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="third_area">
+	<div class="third_area_warp">
+		<div class="third_area_simple_desc">
+			<h1>Queen Lagacy</h1>
+			<p>퀸의 전대 명곡 리스트</p>
+			<div class="more_btn" onclick="moremore()" id="menu_menu">앨범보기</div>
+</section>
+
+<section class="forth_area">
+	<div class="forth_area_warp">
+		<div class="forth_area_album" onclick="location.href='music.html#1'">
+			<img src="images/album1.jpg">
+			<div class="album_box_desc">
+					<h1>Bohemian Rhapsody</h1>
+					<h3>1975, 《A Night at the Opera》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#2'">
+			<img src="images/album2.jpg">
+			<div class="album_box_desc" >
+				<h1>We Will Rock You</h1>
+				<h3>1977, 《News of the World》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#3'">
+			<img src="images/album3.jpg">
+			<div class="album_box_desc" >
+				<h1>Under Pressure</h1>
+				<h3>1981, 《Hot Space》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#4'">
+			<img src="images/album4.jpg">
+			<div class="album_box_desc" >
+				<h1>Fat Bottomed Girls</h1>
+				<h3>1978, 《Greatest Hits》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#5'">
+			<img src="images/album5.jpg">
+			<div class="album_box_desc">
+				<h1>Killer Queen</h1>
+				<h3>1974, 《Sheer Heart Attack》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#6'">
+			<img src="images/album6.jpg">
+			<div class="album_box_desc" >
+				<h1>Don't Stop Me Now</h1>
+				<h3>1976, 《Jazz》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#7'">
+			<img src="images/album7.jpg">
+			<div class="album_box_desc" >
+				<h1>We Are the Champions</h1>
+				<h3>1977, 《News of the World》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#8'">
+			<img src="images/album8.jpg">
+			<div class="album_box_desc" >
+				<h1>Crazy Little Thing Called Love</h1>
+				<h3>1979, 《The Game》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#9'">
+			<img src="images/album9.jpg">
+			<div class="album_box_desc" >
+					<h1>You're My Best Friend</h1>
+					<h3>1975, 《A Night at the Opera》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#10'">
+			<img src="images/album10.jpg">
+			<div class="album_box_desc" >
+				<h1>Stone Cold Crazy</h1>
+				<h3>1974, 《Sheer Heart Attack》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#11'">
+			<img src="images/album11.jpg">
+			<div class="album_box_desc" >
+				<h1>Another One Bites the Dust</h1>
+				<h3>1980, 《The Game》</h3>
+			</div>
+		</div>
+		<div class="forth_area_album" onclick="location.href='music.html#12'">
+			<img src="images/album12.jpg">
+			<div class="album_box_desc" >
+				<h1>Somebody to Love</h1>
+				<h3>1976, 《Greatest Hits》</h3>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<footer>
+	<div class="footer_sangdan"></div>
+	<div class="footer_wrap">
+		<div class="footer_first" data-role="button" data-role="content">
+			<a href="#">HOME</a>
+			<a href="band.html" data-role="button" data-transition="slide">BAND</a>
+			<a href="music.html" data-role="button" data-transition="slide">MUSIC</a>
+			<a href="lagacy.html" data-role="button" data-transition="slide">LAGACY</a>
+			<a href="#" data-role="button" data-transition="slide">ETC</a>
+		</div>
+		<div class="footer_second">
+			<div class="footer_second_greed">
+				<h1>만든이</h1>
+				<div class="mama">
+					<p>
+							<b>프로젝트 명칭</b>:퀸 레거시<br>
+							<b>제작자</b>:박기홍<br>
+					</p>
+					<h3>연락처 : epzmfhs@naver.com</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_third_back"></div>
+</footer>
+</body>
+</html>

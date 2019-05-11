@@ -1,0 +1,230 @@
+@media(max-width:2000px){
+  .band_portrait_wrap{height: 500px;}
+  .band_portrait_item{height: 500px;}
+  .band_portrait_item img{
+    width: 100%;
+    height: auto;
+  }
+  .band_portrait_item p{
+    font-size: 24px;
+  }
+
+  .band_introduction_dec span{
+    font-size: 30px;
+  }
+  .band_introduction_dec p{
+      font-size: 26px;
+      height: 75%;
+      padding-top: 14%;
+  }
+  .band_introduction_dec h2 {
+    width: 40%;
+    height: 16%;
+    font-size: 30px;
+  }
+  .band_introduction_dec img{
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    height: 35%;
+  }
+}
+
+@media(max-width:1600px){
+  .band_portrait_wrap{height: 500px;}
+  .band_portrait_item{height: 500px;}
+  .band_portrait_item img{
+    width: 100%;
+    height: auto;
+  }
+
+  .band_introduction_dec p{
+      padding-top: 3%;
+      padding-bottom: 3%;
+  }
+  .band_introduction_dec img{
+    width: 80%;
+    height: 30%;
+  }
+
+  .band_introduction_dec p{
+      font-size: 26px;
+      height: 75%;
+      padding-top: 16%;
+  }
+  .band_introduction_dec h2 {
+      width: 60%;
+      height: 15%;
+      font-size: 20px;
+  }
+}
+
+@media(max-width:1400px){
+  .band_portrait_wrap{height: 400px;}
+  .band_portrait_item{height: 400px;}
+  .band_portrait_item img{
+    height: 100%;
+    height: auto;
+  }
+  .band_introduction_dec img{
+    width: 80%;
+    height: 25%;
+    display: block;
+  }
+  .band_introduction_dec h2{
+    height: 20%;
+  }
+}
+
+@media(max-width:1100px){
+  .band_portrait_wrap{height: 400px;}
+  .band_portrait_item{height: 400px;}
+  .band_portrait_item img{
+    width: 100%;
+    height: 100%;
+  }
+
+
+  .band_introduction_dec span{
+    font-size: 26px;
+  }
+  .band_introduction_dec p{
+    font-size: 22px;
+  }
+  .band_introduction_dec h1 {
+      font-size: 26px;
+  }
+  .band_introduction_dec h2 {
+      width: 50%;
+      height: 15%;
+      font-size: 20px;
+  }
+  .band_introduction_dec img{
+    width: 100%;
+    height: 30%;
+  }
+}
+
+@media(max-width:880px){
+    .band_portrait_item img{
+      width: auto;
+      height: 100%;
+      align: left;
+    }
+
+    .band_introduction_dec h1 {
+        max-height: 350px;
+        font-size: 20px;
+    }
+    .band_introduction_dec img{
+      display: none;
+    }
+}
+
+@media(max-width:750px){
+    .band_portrait_item img{
+      height: 100%;
+      transform: translateX(-20px);
+    }
+    .band_portrait_item img:hover{
+      transform: translateX(-40px);
+    }
+    .band_introduction_slot h1{
+      padding-top: 5%;
+      font-size: 60px;
+    }
+
+    .band_introduction_dec span{
+      font-size: 24px;
+    }
+    .band_introduction_dec p{
+      font-size: 20px;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    .band_introduction_dec h2 {
+        width: 70%;
+        height: 15%;
+        font-size: 20px;
+    }
+}
+
+@media(max-width:550px){
+  .band_portrait_wrap{height: 300px;}
+  .band_portrait_item{height: 300px;}
+    .band_portrait_item img{
+      width: : auto;
+      height: 100%;
+      transform: translateX(-40px);
+    }
+    .band_portrait_item img:hover{
+      transform: translateX(-40px);
+    }
+    .band_portrait_item p{
+      font-size: 18px;
+    }
+    .band_introduction_slot h1{
+      height: 5%;
+      padding-top: 2%;
+      font-size: 40px;
+    }
+
+    .footer_wrap{
+        width: 100%;
+    }
+
+    .band_introduction_dec span{
+      font-size: 20px;
+    }
+    .band_introduction_dec p{
+      font-size: 17px;
+        height: 80%;
+        padding-top: 7%;
+        padding-bottom: 7%;
+    }
+    .band_introduction_dec h2 {
+        height: 12%;
+    }
+    .band_introduction_dec img{
+      width: 100%;
+      height: 15%;
+      display: block;
+    }
+}
+
+@media(max-width:480px){
+  .band_portrait_item img:hover{
+    transform: translateX(-50px);
+  }
+  .band_introduction_slot h1{
+    height: 5%;
+    padding-top: 3%;
+    font-size: 30px;
+  }
+
+  .band_introduction_dec p{
+      padding-top: 10%;
+      padding-bottom: 10%;
+  }
+  .band_introduction_dec h2 {
+      width: 74%;
+      height: 13%;
+  }
+  .band_introduction_dec img{
+    width: 100%;
+    height: 15%;
+  }
+}
+
+@media(max-width:400px){
+  .band_introduction_dec h2 {
+      width: 74%;
+  }
+  .band_introduction_dec p{
+    font-size: 15px;
+  }
+  .band_introduction_dec img{
+    width: 100%;
+    height: 15%;
+  }
+}

@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Queen's Lacacy - The Lagacy</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/new_main.css">
+		<link rel="stylesheet" href="css/lagacy.css">
+		<link rel="stylesheet" href="css/responsive.css">
+		<link rel="stylesheet" href="css/responsive_lagacy.css">
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/new_main.js"></script>
+    <script src="js/lagacy.js"></script>
+</head>
+
+<body style="background-color: rgba(0,0,0,.8)">
+	<header>
+		<div class="LOGO">
+        <img src="images/queen-logo.jpg">
+    </div>
+
+		<!-- 메뉴 -->
+		<!-- 데스크탑 메뉴 -->
+    <div class="header_wrap" data-role="content">
+        <ul>
+            <li><a href="index.html" data-role="button">HOME</a></li>
+            <li><a href="band.html" data-role="button" data-transition="slide">BAND</a></li>
+            <li><a href="music.html" data-role="button" data-transition="slide">MUSIC</a></li>
+            <li class="on"><a href="#" data-role="button" data-transition="slide">LAGACY</a></li>
+            <li><a href="#" data-role="button" data-transition="slide">ETC</a></li>
+        </ul>
+  	</div>
+    </header>
+
+		<!-- 모바일 메뉴 -->
+		<!-- line (1) -->
+		<!-- line (3) -->
+		<!-- line (2) -->
+    <div class="menu_btn">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+
+		<div class="menu_area">
+				<div class="menu_area_wrap" data-role="content">
+						<a href="index.html" data-role="button">HOME</a>
+            <a href="band.html" data-role="button" data-transition="slide">BAND</a>
+            <a href="music.html" data-role="button" data-transition="slide">MUSIC</a>
+            <a href="#" data-role="button" data-transition="slide">LAGACY</a>
+            <a href="#" data-role="button" data-transition="slide">ETC</a>
+				</div>
+		</div>
+
+    <div class="row">
+      <div class="column">
+        <img src="images/mobile_slider03.gif" alt="Sombody To Love MV"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/mobile_slider03.jpg" alt="Queen Live"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/main01_img01.jpg" alt="Freddie Mercury"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/third_area_pic.jpg" alt="Freddie Mercury"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/mobile_slider01.jpg" alt="Bohemian Rhapsody"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/Greatest_Hit.jpg" alt="Greatest Hits Cover"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/main01_img04.jpg" alt="Roger Taylor"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/main01_img05.jpg" alt="Band Photo"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/album1.jpg" alt="A Night at the Opera Album Cover"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/album3.jpg" alt="Under Pressure Cover"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/album4.jpg" alt="Fat Bottomed Girl Cover"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/album5.jpg" alt="Killer Queen Cover"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/album6.jpg" alt="Jazz Cover"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/album7.jpg" alt="News of the World Cover"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/album11.jpg" alt="Another One Bites The Dust Cover"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/album9.jpg" alt="You're My Best Friend Cover"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/album12.jpg" alt="Sombody To Love Cover"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/main01_img02.jpg" alt="Brian May Guitar Solo"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/main01_img03.jpg" alt="John Deacon Bass"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/mobile_slider04.jpg" alt="The Band"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/band_portrait_01.jpg" alt="Freddie Portrait"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/band_portrait_02.jpg" alt="Brian May Portrait"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/band_portrait_03.jpg" alt="Roger Taylor Portrait"  onclick="gallary(this)">
+      </div>
+      <div class="column">
+        <img src="images/band_portrait_04.jpg" alt="John Deacon Portrait"  onclick="gallary(this)">
+      </div>
+    </div>
+
+    <div class="container">
+      <span onclick="this.parentElement.style.display='none'" style="color:purple;" class="closebtn">&times;</span>
+      <img id="expandedImg" style="width:100%">
+      <div id="imgtext"></div>
+    </div>
+
+<footer>
+	<div class="footer_sangdan"></div>
+	<div class="footer_wrap">
+		<div class="footer_first" data-role="button" data-role="content">
+			<a href="index.html">HOME</a>
+			<a href="band.html" data-role="button" data-transition="slide">BAND</a>
+			<a href="music.html" data-role="button" data-transition="slide">MUSIC</a>
+			<a href="#" data-role="button" data-transition="slide">LAGACY</a>
+			<a href="#" data-role="button" data-transition="slide">ETC</a>
+		</div>
+		<div class="footer_second">
+			<div class="footer_second_greed">
+				<h1>만든이</h1>
+				<div class="mama">
+					<p>
+							<b>프로젝트 명칭</b>:퀸 레거시<br>
+							<b>제작자</b>:박기홍<br>
+					</p>
+					<h3>연락처 : epzmfhs@naver.com</h3>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer_third_back"></div>
+</footer>
+</body>
+</html>
