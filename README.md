@@ -1,1 +1,1 @@
-# QueensLagacy
+# Queen's Lagacy
